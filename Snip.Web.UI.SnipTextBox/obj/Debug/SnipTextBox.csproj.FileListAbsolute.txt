@@ -1,0 +1,5 @@
+C:\SnipSoporte\ZatakTextBox1\ZatakTextBox\ZatakTextBox\bin\Debug\Snip.Web.UI.TextBox.dll
+C:\SnipSoporte\ZatakTextBox1\ZatakTextBox\ZatakTextBox\bin\Debug\Snip.Web.UI.TextBox.pdb
+C:\SnipSoporte\ZatakTextBox1\ZatakTextBox\ZatakTextBox\obj\Debug\ResolveAssemblyReference.cache
+C:\SnipSoporte\ZatakTextBox1\ZatakTextBox\ZatakTextBox\obj\Debug\Snip.Web.UI.TextBox.dll
+C:\SnipSoporte\ZatakTextBox1\ZatakTextBox\ZatakTextBox\obj\Debug\Snip.Web.UI.TextBox.pdb

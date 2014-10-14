@@ -1,0 +1,172 @@
+﻿/*----- ESTRUCTURA DEL SITIO ------*/
+* {margin: 0;padding: 0;}
+/*body {background: #ffffff url('../images/h05.gif') repeat-x;color: #666666;font-family: Segoe UI, Verdana, Tahoma, Arial, sans-serif;font-size: 11.25px;font-weight:normal;}*/
+body {background: #ffffff url('../images/h05.gif') repeat-x;color: #666666;font-family: Segoe UI, Verdana, Tahoma, Arial, sans-serif;font-size: 12px;font-weight:normal;}
+h1 {font-size: 197%;font-weight: normal;padding-top: 10px; color: #f89934;}
+h2 {border-bottom:1px dotted #CCCCCC; font-family:inherit;color:#488ec5; font-size:126%; font-weight: bold;line-height: 2em;}
+h3 {font-size: 106%;color: #000000;line-height: 1.2em;}
+p, ul, ol {line-height: 1.6em;}
+ul {list-style: none;}
+ul li {padding-left: 0px;}
+a:link, a:visited {color: #488ec5;text-decoration:none; cursor:hand;}
+a:hover, a:active {color: #F89934;text-decoration:none; cursor:hand;}
+
+img {border: none;} 
+img.left {float: left;margin: 0 20px 10px 0;}
+img.right {float: right;margin: 0 0 10px 20px;}
+object {border: none;float: right;margin: 0 0 10px 20px;}
+.byline {color: #cccccc;}
+
+/*-- Encabezado --*/
+#encabezado {height: 130px;margin: 0 auto;width: 960px;}
+#logoLeft {display:block;float:left;margin:1px;}
+#logoLeft > img {border: 0; height:79px; margin-top:10px; padding-left: 0px; width:220px;}
+#logoRight {display:block; float: right; margin-top:0px; padding:0; vertical-align:middle;}
+#logoRight > img {border: 0; height:130px; padding-right: 0px; width:412px;}
+#titulo {display:block;float:left;margin-left:0px; margin-top:12px; padding:0; } 
+#titulo > img {border: 0;padding-left: 0px;}
+/*-- Barra de menu --*/
+#menubar {height: 26px;margin: 0 auto;width: 960px;}
+.mnubar-unordered-list {float: right;margin:0;list-style: none;line-height: normal;}
+.mnubar-unordered-list-item {display: block;float:left;margin-right: 5px;padding: 0;background: transparent;}
+.mnubar-link {display: block;color: #488ec5;cursor: hand;float: left;font-size: 80%;text-decoration:none;}
+.mnubar-link:hover {color: #f89934;}
+.mnubar-link > b {display: block;float:left;height: 23px;padding: 7px 5px 0 5px;}
+.mnubar-img {display: block;float:left;margin-top:4px;vertical-align:bottom;}
+/*-- Pagina --*/
+#pagina {width: 970px;margin: 0 auto;padding: 5px 0 0 0;}
+/*-- Contenido de la pagina --*/
+#contenido {float: left;width: 768px;}
+/*-- Formulario --*/
+#formtop {height: 33px;background: transparent url('../Images/form_top.png') top left no-repeat;color: #ffffff;}
+#formtitle {padding: 10px 0 0 18px;font-weight: bold;color: #fff;font-size: 96%;font-family: Trebuchet MS, Verdana, Arial;}
+#formbody {background: url('../Images/form_body.gif') repeat-y;padding-top: 10px;padding-left: 26px;padding-right:26px;min-height:310px;}
+#formbottom {height:15px;background:url('../Images/form_bottom.png') top left no-repeat;}
+/*-- Menu lateral --*/
+#lateral {float: left;width: 192px;}
+#lateral .img_sidebar {text-align: center;}
+#menutop {background: url('../Images/menu_top.png') top no-repeat;height: 33px;width: 186px;}
+#menutitle {padding: 10px 0 0 18px;font-weight: bold;color: #fff;font-size: 96%;font-family: Trebuchet MS, Verdana, Arial;}
+#menubody {background: url('../Images/menu_body.gif') repeat-y;width: 186px;font-size: 88%;font-weight: 500; min-height: 320px;}
+#menubottom {height:16px;background:url('../Images/menu_bottom.png') bottom no-repeat;width: 186px;}
+#menubody .mnu-title {margin-left: 18px;padding-bottom: 2px;padding-top:5px;color: #F89934;width: 150px;border-bottom: solid 1px #488ec5;}
+#menubody .mnu-list {width: 150px;list-style-type:none;margin-left:8px;padding-bottom:1px;}
+#menubody .mnu-list a {width: 150px;height:20px;color: #666666;text-decoration:none;font-size: 100%;padding:2px 0 0 10px;display:block!important;display:inline-block;margin-top: 2px;}
+#menubody .mnu-list a:hover {color: #d7633c;}
+#menubody .mnu-list-ico {margin-right: 3px;vertical-align: text-bottom;}
+/*-- Pie de Pagina --*/
+#footer {position: relative;bottom: 0px;background-repeat: no-repeat;background-position: center;height: 40px;padding: 10px;width: 100%;z-index: 5;}
+#footer p {margin: 0;text-align: center;color: #666666;font-size: 85%;}
+/*-- Estilos del Formulario --*/
+.formulario fieldset {padding: 5px 0px 5px 10px;border:1px solid #ccc;}
+.formulario fieldset legend {font-weight: bold;color: #222;padding-left: 2px;padding-right: 2px;}
+.formulario ul {margin:0;padding:0;list-style-type:none;width:100%;}
+.formulario li {background: none no-repeat 0 0;display:block;margin:0;padding:5px 5px 6px 5px;clear:both;}
+/*-- Campos flotantes --*/
+.formulario .leftHalf, .formulario .rightHalf {width:46% !important;}
+.formulario .leftHalf {clear:left !important;float:left;}
+.formulario .rightHalf {clear:none !important;float:right;}
+.formulario li.buttons {clear:both;padding-top:15px;}
+.formulario .likert {width:97% !important;clear:both !important;float:none;}
+.formulario .leftHalf .medium, .rightHalf .medium,.formulario .leftHalf .small, .rightHalf .small {width:100%;}
+.formulario .msj-pnl {vertical-align: middle;padding: 5px;}
+.formulario .msj-ico {margin:0px;vertical-align: middle;}
+.formulario .msj-text {display: inline-table;width: 90%;}
+.formulario .info {display:inline-block;clear:both;border-bottom:1px dotted #ccc;margin:0 0 4px 0; }
+.formulario .info[class]{display:block;}
+.formulario .etiqueta {font-weight:bold;color:#222;line-height:150%;margin:0;padding:0 0 3px 0;border:none;display:block;}
+.formulario input[type="text"] {border: 1px solid #7f9db9;height:19px; font-size:1em;font-family:Tahoma, Verdana, Arial, Sans-Serif;}
+.formulario input[type="text"]:focus {background-color:#ffffcc;}
+.formulario input[type="password"] {border: 1px solid #7f9db9;height:19px; font-size:1em;font-family:Tahoma, Verdana, Arial, Sans-Serif;}
+.formulario input[type="password"]:focus {background-color:#ffffcc;}
+.formulario input[readonly], textarea[readonly] {background-color: #dcdcdc;border: #7f9db9 1px solid;color: #000000;cursor: default;}
+.formulario textarea {border: 1px solid #7f9db9;height:19px; font-size:1em;font-family:Tahoma, Verdana, Arial, Sans-Serif; resize: none; }
+.formulario textarea:focus { background-color:#ffffcc;}
+.formulario select {border:1px solid #7f9db9;font-size:1.12em;font-family:Tahoma, Verdana, Arial, Sans-Serif;}
+.formulario select.listEntry50 {width:50%;}
+.formulario select.listEntry100 {width:98%;}
+.failureNotification {font-size: 1.1em;color: Red; margin:0px;}
+
+.colapsable {}
+.colapsable a:link, .colapsable a:visited {color: #488ec5;}
+ 
+/*-- Controles --*/
+.LoginStyle {padding-left: 5px;}
+.LoginStyle checkbox {margin-left: 0px;margin-right: 5px;}
+.LoginStyle label {padding-left: 5px;}
+.LoginStyle tbody tr td {border: solid 1px #ffffff;}
+.LoginStyle tbody tr:hover td, tbody tr.over td {background: #ffffff;color: #000000;}
+.LoginTextBoxStyle {margin-left: 5px;}
+
+/*---- GridView Skin settings ----*/
+.GridStyle {border:1px solid #b2bfcf;text-indent:2px;line-height:1.6em;font-size:90%;}
+.GridStyle table {border-collapse: collapse;font-size: 80%;width: 100%;}
+.GridStyle th, td {border: solid 1px #b2bfcf;} /*#e5eff8;*/
+.GridStyle caption {color: #9ba9b4;font-weight: bold;font-size: .84em;letter-spacing:.1em;margin:0em 0 0 0;padding: 0 0 5px;caption-side:top;text-align: center;}
+.GridStyle tbody tr:hover td, tbody tr.over td {background: #fddfa4;color: #000000;}
+.GridStyle tbody tr:hover th, tbody tr.over th {background: #fdc95a;color: #000000;}
+.GridStyle thead th {background: #5ba4de;text-align:center;color: #fff;font-weight: bold;}
+.GridStyle td {color:#678197;padding:.2em .3em;}
+.GridStyle th {font-weight:normal;color: #678197;text-align:left;padding:.5em .3em;line-height:1.2em;}
+.GridStyle tr .column1 {background:#e5eff8;}
+.GridStyle tr.odd td {background:#f7fbff}
+.GridStyle tr.odd .column1	{background:#e5eff8;}
+.GridStyle .column1 {background:#e5eff8;} /* #f4f9fe */
+.GridStyle .enlace {color: #488ec5;text-decoration:underline; cursor:hand;}
+.HeaderStyle {background-color: #5ba4de;}
+.HeaderStyle th {color:#ffffff;text-align:center;font-weight: bold;font-size:98%;}
+.RowStyle {background-color: #fff;padding:.2em .2em;}    
+.AlternatingRowStyle {background-color: #e8f2fb;}
+.SelectedRowStyle {background-color: #d1ddf1;color: #333333;font-weight: bold;}
+
+tbody tr.HeaderStyle:hover th, tbody tr.HeaderStyle.over th {background:#5ba4de;color: #ffffff;}
+tbody a:link {color:#ffffff;}
+
+.FooterStyle {background-color: #cee2fc;color: #fff;font-weight: bold;}
+.PagerStyle {background-color: #ffffcc;color: #000;text-align: center;}
+.PagerStyle a:link {color: #4d91c6;}
+.PagerStyle a:active {color: #4D91C6;}
+
+.grdNavBar {color:#000000;margin-top: 2px;padding:5px;background-color:#cee2fc;display:block;border: 1px solid #e5eff8;}
+.button_navbar {border-style: none;background-color: #cee2fc;color:#000000;cursor: pointer;}
+.pagfirst, .pagprev, .pagnext, .paglast {height:1.3em;width:16px;cursor:pointer;border:0px;}
+.pagprev {background:transparent url('../images/ico_prev1.gif') no-repeat scroll center;}
+.pagnext {background:transparent url('../images/ico_next1.gif') no-repeat scroll center;}
+.pagfirst {background:transparent url('../images/ico_first1.gif') no-repeat scroll center;}
+.paglast {background:transparent url('../images/ico_last1.gif') no-repeat scroll center;}
+.pagfirst:hover, .paglast:hover,.pagprev:hover,.pagnext:hover {border: solid 1px #ff7400;}
+.pagfirst_disable {height:1.3em;width:16px;cursor:default;border:0px;background:transparent url('../images/ico_first_disabled.gif') no-repeat scroll center;}
+
+/*-- Accordion Styles --*/
+/*.accordionHeader {height: 26px;cursor: pointer;}
+.accordionHeaderSelected {cursor: pointer;}*/
+
+/*-- Masked Edit Styles --*/
+.MaskedEditFocus {background-color: #ffffcc;color: #000000;}
+.MaskedEditError {background-color: #ffcccc;}
+.updateProgressPanel {position: absolute;width:100px;left:50%;top:40%;background-color:#ffffff;border: solid 1px #5ba4de;text-align: center;vertical-align: middle;padding:16px 5px 5px 5px;background-position: center center;z-index:3;}
+.updateProgressPanel img {vertical-align:middle;margin:2px;}
+
+/*-- Modal Popup --*/
+div .diagtop {height: 33px;background: transparent url('../Images/form_top_d.gif') top left no-repeat;color: #ffffff;}
+div .diagtop h3.formtitle {padding: 10px 0 0 18px;font-weight: bold;color: #fff;font-size: 96%;font-family: Trebuchet MS, Verdana, Arial;}
+div .diagbody {background: url('../Images/form_body_d.gif') repeat-y;padding-top: 10px;padding-left: 26px;padding-right:26px;line-height: 1.6em;}
+div .diagbottom {height:15px;background:url('../Images/form_bottom_d.gif') top left no-repeat;}
+
+.getDate {}
+
+.hidden {display:none;}
+
+.tablaMeses {border-style: none; border-collapse: collapse;}
+.tablaMeses tr {margin:0; padding:0;}
+.tablaMeses td {padding:2px; border-style:none;}
+
+.report-box { background-color:#e5eff8; border:1px solid #B8CFFE;margin:1px;padding:5px 5px 10px;}
+.ButtonAPP {border: 1px solid #c5dbec;background: #dfeffc url('../images/glass.png') 0 50% repeat-x;font-weight: bold;
+            font-family: 'Trebuchet MS', Verdana, Arial,Tahoma, Helvetica, Geneva, sans-serif;
+	        font-size:1em;color: #2e6e9e !important;cursor :hand;margin :5px;height: 2.5em;width:32px; float: left;}
+.ButtonAPP a {color: #2e6e9e;}
+.ButtonAPP:hover {border: 1px solid #79b7e7;background: #d0e5f5 url('../images/glassover.png') 0 50% repeat-x;font-weight: bold;color: #1d5987 !important;}
+.ButtonAPP a {color: #1d5987;}
+.ButtonAPP:active {border: 1px solid #79b7e7;background: #f5f8f9 url('../images/glassactive.png') 0 50% repeat-x;font-weight: bold;color: #e17009 !important;}
+

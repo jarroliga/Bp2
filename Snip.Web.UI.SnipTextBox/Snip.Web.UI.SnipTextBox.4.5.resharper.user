@@ -1,0 +1,46 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/d:design/f:Enumeracion.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:RangeExValidator.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:LengthValidator.cs" caret="0" fromTop="0" />
+      <File id="E1ADECD8-1592-439B-81E8-8E8022965287/f:Default.aspx" caret="1063" fromTop="20" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:CustomExValidator.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:CompareExValidator.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:RequiredValidator.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:RegExValidator.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/d:design/f:SnipTextBoxActionList.cs" caret="18444" fromTop="26" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/d:design/f:SnipTextBoxDesigner.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:SnipBaseValidator.cs" caret="0" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:SnipTextBox.cs" caret="1335" fromTop="0" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:Common.cs" caret="6767" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:SnipTextBox.cs" caret="15941" fromTop="92" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:SnipTextBox.cs" caret="15746" fromTop="427" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:SnipTextBox.cs" caret="16202" fromTop="438" />
+      <File id="E1ADECD8-1592-439B-81E8-8E8022965287/f:Default.aspx" caret="1201" fromTop="11" />
+      <File id="E1ADECD8-1592-439B-81E8-8E8022965287/f:Default.aspx" caret="1050" fromTop="20" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/d:design/f:SnipTextBoxActionList.cs" caret="18443" fromTop="26" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:Common.cs" caret="6767" fromTop="19" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:SnipTextBox.cs" caret="281" fromTop="11" />
+      <File id="1F030E4D-0101-43CA-A021-234616588BB2/f:SnipTextBox.cs" caret="1321" fromTop="0" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerMSTest>
+    <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
+  </UnitTestRunnerMSTest>
+</Configuration>

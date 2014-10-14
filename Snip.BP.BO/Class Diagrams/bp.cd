@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Snip.BP.BO.Bp.Fuente">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAEAAgAAAAAAAAAAgCAAAAAAAAAA=</HashCode>
+      <FileName>Bp\Fuente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Financiamiento">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgCAAAAQAAAAAIAAAACAAAQCAAAAAAIAAQAACBAA=</HashCode>
+      <FileName>Bp\Financiamiento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Convenio" />
+      <Property Name="Fuente" />
+      <Property Name="Agencia" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Convenio">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAAABAABAAAgAABAAAAAgAgACAAAAQAAAA=</HashCode>
+      <FileName>Bp\Convenio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Obra">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAQAAAAACAAAAgAAIgAAACAAEAAAIAhAQAAA=</HashCode>
+      <FileName>Bp\Obra.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Proyecto" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.BusinessBase">
+    <Position X="5.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAAAAgAAAAAEAAAAgAAAAAEAAAUAAAAAAA=</HashCode>
+      <FileName>BusinessBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Organismo">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAAAAAAACAAgAAAAAgAAQAgAAAAAACAAAQ=</HashCode>
+      <FileName>Bp\Organismo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Agencia">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAgAAAAAgAAAAgEAAAAAQAAAA=</HashCode>
+      <FileName>Bp\Agencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Proyecto">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAQABAAACAAAAgAAIAAgACAAAAAAIAgAAAAA=</HashCode>
+      <FileName>Bp\Proyecto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Institucion">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEABQQAAAAABAAAgAAAAEgAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Bp\Institucion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75131814-401F-4EFC-A62B-4DC0ED5358A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Snip.BP.BO</RootNamespace>
+    <AssemblyName>Snip.BP.BO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Snip.BP.Validation, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Snip.BP.Validation\bin\Debug\Snip.BP.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\Aplicacion.cs" />
+    <Compile Include="App\Bitacora.cs" />
+    <Compile Include="App\Estado.cs" />
+    <Compile Include="App\Evento.cs" />
+    <Compile Include="App\Filtro.cs" />
+    <Compile Include="App\Opcion.cs" />
+    <Compile Include="App\Parametro.cs" />
+    <Compile Include="App\Perfil.cs" />
+    <Compile Include="App\PerfilEstado.cs" />
+    <Compile Include="App\PerfilOpcion.cs" />
+    <Compile Include="App\PerfilTransicionEstado.cs" />
+    <Compile Include="App\Tabla.cs" />
+    <Compile Include="App\Tarea.cs" />
+    <Compile Include="App\TipoFiltro.cs" />
+    <Compile Include="App\TransicionEstado.cs" />
+    <Compile Include="App\UsuarioObra.cs" />
+    <Compile Include="App\UsuarioPerfil.cs" />
+    <Compile Include="App\UsuarioProyecto.cs" />
+    <Compile Include="App\UsuarioUnidadEjecutora.cs" />
+    <Compile Include="Bpi\Actividad.cs" />
+    <Compile Include="Bpi\ActividadCollection.cs" />
+    <Compile Include="Bpi\ActividadCosto.cs" />
+    <Compile Include="Bpi\ActividadCostoCollection.cs" />
+    <Compile Include="Bpi\AlertaSolicitud.cs" />
+    <Compile Include="Bpi\AlertaSolicitudCollection.cs" />
+    <Compile Include="Bpi\ClasificacionGasto.cs" />
+    <Compile Include="Bpi\ClasificacionGastoCollection.cs" />
+    <Compile Include="Bpi\Componente.cs" />
+    <Compile Include="Bpi\ComponenteCollection.cs" />
+    <Compile Include="Bpi\Producto.cs" />
+    <Compile Include="Bpi\ProductoCollection.cs" />
+    <Compile Include="Bpi\Programa.cs" />
+    <Compile Include="Bpi\ProgramaCollection.cs" />
+    <Compile Include="Bpi\Proyecto.cs" />
+    <Compile Include="Bpi\ProyectoBeneficiario.cs" />
+    <Compile Include="Bpi\ProyectoBeneficiarioCollection.cs" />
+    <Compile Include="Bpi\ProyectoCollection.cs" />
+    <Compile Include="Bpi\ProyectoCosto.cs" />
+    <Compile Include="Bpi\ProyectoCostoCollection.cs" />
+    <Compile Include="Bpi\ProyectoGastoRecurrente.cs" />
+    <Compile Include="Bpi\ProyectoGastoRecurrenteCollection.cs" />
+    <Compile Include="Bpi\ProyectoMunicipio.cs" />
+    <Compile Include="Bpi\ProyectoMunicipioCollection.cs" />
+    <Compile Include="Bpi\Solicitud.cs" />
+    <Compile Include="Bpi\SolicitudBitacora.cs" />
+    <Compile Include="Bpi\SolicitudBitacoraCollection.cs" />
+    <Compile Include="Bpi\SolicitudCollection.cs" />
+    <Compile Include="Bpi\SolicitudDocumento.cs" />
+    <Compile Include="Bpi\SolicitudDocumentoCollection.cs" />
+    <Compile Include="Bpi\SolicitudPrograma.cs" />
+    <Compile Include="Bpi\SolicitudProgramaCollection.cs" />
+    <Compile Include="Bpi\TipoAlerta.cs" />
+    <Compile Include="Bpi\TipoDictamen.cs" />
+    <Compile Include="Bpi\TipoPrograma.cs" />
+    <Compile Include="Bpi\TipoProgramaCollection.cs" />
+    <Compile Include="Bpi\TipoProyecto.cs" />
+    <Compile Include="Bpi\TipoProyectoCollection.cs" />
+    <Compile Include="Bpi\TipoSolicitud.cs" />
+    <Compile Include="Bpi\TipoSolicitudCollection.cs" />
+    <Compile Include="Bpm\MatrizEvaluacionCollection.cs" />
+    <Compile Include="Bpm\OpcionCollection.cs" />
+    <Compile Include="Bpm\PreguntaCollection.cs" />
+    <Compile Include="Bpm\ProyectoCollection.cs" />
+    <Compile Include="Bpm\RespuestaCollection.cs" />
+    <Compile Include="Bpm\SeccionCollection.cs" />
+    <Compile Include="Bpp\PresupuestoAnual.cs" />
+    <Compile Include="Bpp\PresupuestoAnualInstitucion.cs" />
+    <Compile Include="Bpp\Sesion.cs" />
+    <Compile Include="Bpp\SesionTraslado.cs" />
+    <Compile Include="Bpp\Traslado.cs" />
+    <Compile Include="Bpp\TrasladoPartida.cs" />
+    <Compile Include="Bps\AlertaEstado.cs" />
+    <Compile Include="Bps\AlertaEtapa.cs" />
+    <Compile Include="Bps\AlertaReprogramacion.cs" />
+    <Compile Include="Bps\Contratista.cs" />
+    <Compile Include="Bps\Contrato.cs" />
+    <Compile Include="Bps\ContratoBitacora.cs" />
+    <Compile Include="Bps\ContratoObra.cs" />
+    <Compile Include="Bps\LicitacionBitacora.cs" />
+    <Compile Include="Bps\LicitacionEtapaCronograma.cs" />
+    <Compile Include="Bps\Licitacion.cs" />
+    <Compile Include="Bps\LicitacionObra.cs" />
+    <Compile Include="Bps\LicitacionReprogramacion.cs" />
+    <Compile Include="Bps\LicitacionObraReprogramacion.cs" />
+    <Compile Include="Bps\TipoAlerta.cs" />
+    <Compile Include="Bps\TipoProcedimiento.cs" />
+    <Compile Include="Bp\Agencia.cs" />
+    <Compile Include="Bp\AlineamientoPNDH.cs" />
+    <Compile Include="Bp\AlineamientoPNDHCollection.cs" />
+    <Compile Include="Bp\AsignacionPIP.cs" />
+    <Compile Include="Bp\Beneficiario.cs" />
+    <Compile Include="Bp\BeneficiarioCollection.cs" />
+    <Compile Include="Bp\CategoriaBeneficiario.cs" />
+    <Compile Include="Bp\CategoriaBeneficiarioCollection.cs" />
+    <Compile Include="Bp\CategoriaCosto.cs" />
+    <Compile Include="Bp\CategoriaCostoCollection.cs" />
+    <Compile Include="Bp\Departamento.cs" />
+    <Compile Include="Bp\FuenteFinanciamiento.cs" />
+    <Compile Include="Bp\FuenteFinanciamientoCollection.cs" />
+    <Compile Include="Bp\FuenteSIGFA.cs" />
+    <Compile Include="Bp\Indicador.cs" />
+    <Compile Include="Bp\Intervencion.cs" />
+    <Compile Include="Bp\IntervencionCollection.cs" />
+    <Compile Include="Bp\ListaFiltro.cs" />
+    <Compile Include="Bp\Municipio.cs" />
+    <Compile Include="Bp\NaturalezaProceso.cs" />
+    <Compile Include="Bp\NaturalezaProcesoCollection.cs" />
+    <Compile Include="Bp\Obra.cs" />
+    <Compile Include="Bp\Convenio.cs" />
+    <Compile Include="Bp\Entidad.cs" />
+    <Compile Include="Bp\Financiamiento.cs" />
+    <Compile Include="Bp\Fuente.cs" />
+    <Compile Include="Bp\Institucion.cs" />
+    <Compile Include="App\Session.cs" />
+    <Compile Include="App\Usuario.cs" />
+    <Compile Include="Bp\ListaPip.cs" />
+    <Compile Include="Bp\Organismo.cs" />
+    <Compile Include="Bp\OrganismoFinanciador.cs" />
+    <Compile Include="Bp\OrganismoFinanciadorCollection.cs" />
+    <Compile Include="Bp\OrigenFondo.cs" />
+    <Compile Include="Bp\Proceso.cs" />
+    <Compile Include="Bp\ProcesoCollection.cs" />
+    <Compile Include="Bp\ProgramacionAnual.cs" />
+    <Compile Include="Bp\Proyecto.cs" />
+    <Compile Include="Bp\ProyectoFicha.cs" />
+    <Compile Include="Bp\Sector.cs" />
+    <Compile Include="Bp\ClasificadorInstitucional.cs" />
+    <Compile Include="Bp\TipoBeneficiario.cs" />
+    <Compile Include="Bp\TipoBeneficiarioCollection.cs" />
+    <Compile Include="Bp\TipoDictamenCollection.cs" />
+    <Compile Include="Bp\TipoGastoRecurrente.cs" />
+    <Compile Include="Bp\TipoGastoRecurrenteCollection.cs" />
+    <Compile Include="Bp\TipoObjeto.cs" />
+    <Compile Include="Bp\TipoOrganismoFinanciador.cs" />
+    <Compile Include="Bp\TipoOrganismoFinanciadorCollection.cs" />
+    <Compile Include="Bp\UnidadEjecutora.cs" />
+    <Compile Include="BusinessBase.cs" />
+    <Compile Include="App\AplicacionCollection.cs" />
+    <Compile Include="App\BitacoraCollection.cs" />
+    <Compile Include="App\EstadoCollection.cs" />
+    <Compile Include="App\FiltroCollection.cs" />
+    <Compile Include="App\UsuarioPerfilCollection.cs" />
+    <Compile Include="App\OpcionCollection.cs" />
+    <Compile Include="App\PerfilCollection.cs" />
+    <Compile Include="App\PerfilEstadoCollection.cs" />
+    <Compile Include="App\PerfilOpcionCollection.cs" />
+    <Compile Include="App\PerfilTransicionEstadoCollection.cs" />
+    <Compile Include="App\SessionCollection.cs" />
+    <Compile Include="App\TareaCollection.cs" />
+    <Compile Include="App\TransicionEstadoCollection.cs" />
+    <Compile Include="App\UsuarioCollection.cs" />
+    <Compile Include="App\UsuarioUnidadEjecutoraCollection.cs" />
+    <Compile Include="Bpp\PresupuestoAnualCollection.cs" />
+    <Compile Include="Bpp\SesionCollection.cs" />
+    <Compile Include="Bpp\SesionTrasladoCollection.cs" />
+    <Compile Include="Bpp\TrasladoCollection.cs" />
+    <Compile Include="Bpp\TrasladoPartidaCollection.cs" />
+    <Compile Include="Bps\AlertaEstadoCollection.cs" />
+    <Compile Include="Bps\AlertaEtapaCollection.cs" />
+    <Compile Include="Bps\AlertaReprogramacionCollection.cs" />
+    <Compile Include="Bps\LicitacionBitacoraCollection.cs" />
+    <Compile Include="Bps\LicitacionEtapaCronogramaCollection.cs" />
+    <Compile Include="Bps\LicitacionCollection.cs" />
+    <Compile Include="Bps\LicitacionObraCollection.cs" />
+    <Compile Include="Bps\LicitacionReprogramacionCollection.cs" />
+    <Compile Include="Bps\LicitacionObraReprogramacionCollection.cs" />
+    <Compile Include="Bps\TipoProcedimientoCollection.cs" />
+    <Compile Include="Bp\AgenciaCollection.cs" />
+    <Compile Include="Bp\ConvenioCollection.cs" />
+    <Compile Include="Bp\FuenteCollection.cs" />
+    <Compile Include="Bp\ListaFiltroCollection.cs" />
+    <Compile Include="Bp\ObraCollection.cs" />
+    <Compile Include="Bp\EntidadCollection.cs" />
+    <Compile Include="Bp\FinanciamientoCollection.cs" />
+    <Compile Include="Bp\InstitucionCollection.cs" />
+    <Compile Include="Bp\ListaPipCollection.cs" />
+    <Compile Include="Bp\ProyectoCollection.cs" />
+    <Compile Include="Bp\ClasificadorInstitucionalCollection.cs" />
+    <Compile Include="Bp\UnidadEjecutoraCollection.cs" />
+    <Compile Include="BusinessCollectionBase.cs" />
+    <Compile Include="Bpm\Seccion.cs" />
+    <Compile Include="Bpm\Proyecto.cs" />
+    <Compile Include="Bpm\ProyectoEvaluacion.cs" />
+    <Compile Include="Bpm\MatrizEvaluacion.cs" />
+    <Compile Include="Bpm\Opcion.cs" />
+    <Compile Include="Bpm\Pregunta.cs" />
+    <Compile Include="Bpm\Respuesta.cs" />
+    <Compile Include="Dm\PipAnualCollection.cs" />
+    <Compile Include="Dm\PipDistribucionByEntidadCollection.cs" />
+    <Compile Include="Dm\PipEstructuraFinanciamientoCollection.cs" />
+    <Compile Include="Dm\PipInstitucionCollection.cs" />
+    <Compile Include="Dm\PipInstitucionEntidadCollection.cs" />
+    <Compile Include="Const\Constantes.cs" />
+    <Compile Include="Dm\PipInstitucionEntidad.cs" />
+    <Compile Include="Dm\PipAnual.cs" />
+    <Compile Include="Dm\PipDistribucionByEntidad.cs" />
+    <Compile Include="Dm\PipEstructuraFinanciamiento.cs" />
+    <Compile Include="Dm\PipInstitucion.cs" />
+    <Compile Include="Enums\EstadosProcesoDeLicitacion.cs" />
+    <Compile Include="Enums\EtapasLicitacion.cs" />
+    <Compile Include="Enums\Formatos.cs" />
+    <Compile Include="Enums\TareasLicitacion.cs" />
+    <Compile Include="Enums\TiposAlertaEstadoLicitacion.cs" />
+    <Compile Include="Enums\TiposReprogramacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursos\General.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>General.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\RptLicitacion109.cs" />
+    <Compile Include="Rpt\dsRptLicitaciones101.cs">
+      <DependentUpon>dsRptLicitaciones101.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones101.Designer.cs">
+      <DependentUpon>dsRptLicitaciones101.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones103.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptLicitaciones103.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones104.cs">
+      <DependentUpon>dsRptLicitaciones104.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones104.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptLicitaciones104.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones105.cs">
+      <DependentUpon>dsRptLicitaciones105.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones105.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptLicitaciones105.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones106.cs">
+      <DependentUpon>dsRptLicitaciones106.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones106.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptLicitaciones106.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones107.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptLicitaciones107.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones108.cs">
+      <DependentUpon>dsRptLicitaciones108.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\dsRptLicitaciones108.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptLicitaciones108.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\RptLicitacion102.cs" />
+    <Compile Include="Rpt\RptTemporal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bpm\Bpm.cd" />
+    <None Include="Bp\bp.cd" />
+    <None Include="Class Diagrams\app.cd" />
+    <None Include="Class Diagrams\bp.cd" />
+    <None Include="Class Diagrams\Collections.cd" />
+    <None Include="Class Diagrams\Entidades principales.cd" />
+    <None Include="Class Diagrams\Validacion.cd" />
+    <None Include="Base.cd" />
+    <None Include="Rpt\dsRptLicitaciones101.xsc">
+      <DependentUpon>dsRptLicitaciones101.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones101.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptLicitaciones101.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones101.xss">
+      <DependentUpon>dsRptLicitaciones101.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones103.xsc">
+      <DependentUpon>dsRptLicitaciones103.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones103.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptLicitaciones103.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones103.xss">
+      <DependentUpon>dsRptLicitaciones103.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones104.xsc">
+      <DependentUpon>dsRptLicitaciones104.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones104.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptLicitaciones104.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones104.xss">
+      <DependentUpon>dsRptLicitaciones104.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones105.xsc">
+      <DependentUpon>dsRptLicitaciones105.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones105.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptLicitaciones105.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones105.xss">
+      <DependentUpon>dsRptLicitaciones105.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones106.xsc">
+      <DependentUpon>dsRptLicitaciones106.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones106.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptLicitaciones106.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones106.xss">
+      <DependentUpon>dsRptLicitaciones106.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones107.xsc">
+      <DependentUpon>dsRptLicitaciones107.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones107.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptLicitaciones107.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones107.xss">
+      <DependentUpon>dsRptLicitaciones107.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones108.xsc">
+      <DependentUpon>dsRptLicitaciones108.xsd</DependentUpon>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones108.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptLicitaciones108.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rpt\dsRptLicitaciones108.xss">
+      <DependentUpon>dsRptLicitaciones108.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Recursos\General.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>General.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

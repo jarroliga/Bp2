@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptLicitaciones103" targetNamespace="http://tempuri.org/dsRptLicitaciones103.xsd" xmlns:mstns="http://tempuri.org/dsRptLicitaciones103.xsd" xmlns="http://tempuri.org/dsRptLicitaciones103.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptLicitaciones103" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsRptLicitaciones103" msprop:Generator_UserDSName="dsRptLicitaciones103" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Datos" msprop:Generator_UserTableName="Datos" msprop:Generator_RowDeletedName="DatosRowDeleted" msprop:Generator_TableClassName="DatosDataTable" msprop:Generator_RowChangedName="DatosRowChanged" msprop:Generator_RowClassName="DatosRow" msprop:Generator_RowChangingName="DatosRowChanging" msprop:Generator_RowEvArgName="DatosRowChangeEvent" msprop:Generator_RowEvHandlerName="DatosRowChangeEventHandler" msprop:Generator_TablePropName="Datos" msprop:Generator_TableVarName="tableDatos" msprop:Generator_RowDeletingName="DatosRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTipo" msprop:Generator_UserColumnName="IdTipo" msprop:Generator_ColumnPropNameInRow="IdTipo" msprop:Generator_ColumnVarNameInTable="columnIdTipo" msprop:Generator_ColumnPropNameInTable="IdTipoColumn" type="xs:string" />
+              <xs:element name="CodInstitucion" msprop:Generator_UserColumnName="CodInstitucion" msprop:Generator_ColumnPropNameInRow="CodInstitucion" msprop:Generator_ColumnVarNameInTable="columnCodInstitucion" msprop:Generator_ColumnPropNameInTable="CodInstitucionColumn" type="xs:int" />
+              <xs:element name="Institucion" msprop:Generator_UserColumnName="Institucion" msprop:Generator_ColumnPropNameInRow="Institucion" msprop:Generator_ColumnVarNameInTable="columnInstitucion" msprop:Generator_ColumnPropNameInTable="InstitucionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Siglas" msprop:Generator_UserColumnName="Siglas" msprop:Generator_ColumnPropNameInRow="Siglas" msprop:Generator_ColumnVarNameInTable="columnSiglas" msprop:Generator_ColumnPropNameInTable="SiglasColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CodProyecto" msprop:Generator_UserColumnName="CodProyecto" msprop:Generator_ColumnPropNameInRow="CodProyecto" msprop:Generator_ColumnVarNameInTable="columnCodProyecto" msprop:Generator_ColumnPropNameInTable="CodProyectoColumn" type="xs:int" />
+              <xs:element name="CodSnipP" msprop:Generator_UserColumnName="CodSnipP" msprop:Generator_ColumnPropNameInRow="CodSnipP" msprop:Generator_ColumnVarNameInTable="columnCodSnipP" msprop:Generator_ColumnPropNameInTable="CodSnipPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Proyecto" msprop:Generator_UserColumnName="Proyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CodObra" msprop:Generator_UserColumnName="CodObra" msprop:Generator_ColumnPropNameInRow="CodObra" msprop:Generator_ColumnVarNameInTable="columnCodObra" msprop:Generator_ColumnPropNameInTable="CodObraColumn" type="xs:int" />
+              <xs:element name="CodSnip" msprop:Generator_UserColumnName="CodSnip" msprop:Generator_ColumnPropNameInRow="CodSnip" msprop:Generator_ColumnVarNameInTable="columnCodSnip" msprop:Generator_ColumnPropNameInTable="CodSnipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Obra" msprop:Generator_UserColumnName="Obra" msprop:Generator_ColumnPropNameInRow="Obra" msprop:Generator_ColumnVarNameInTable="columnObra" msprop:Generator_ColumnPropNameInTable="ObraColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Asignado" msprop:Generator_UserColumnName="Asignado" msprop:Generator_ColumnPropNameInRow="Asignado" msprop:Generator_ColumnVarNameInTable="columnAsignado" msprop:Generator_ColumnPropNameInTable="AsignadoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Aprobado" msprop:Generator_UserColumnName="Aprobado" msprop:Generator_ColumnPropNameInRow="Aprobado" msprop:Generator_ColumnVarNameInTable="columnAprobado" msprop:Generator_ColumnPropNameInTable="AprobadoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProgramadoCtos" msprop:Generator_UserColumnName="ProgramadoCtos" msprop:Generator_ColumnPropNameInRow="ProgramadoCtos" msprop:Generator_ColumnVarNameInTable="columnProgramadoCtos" msprop:Generator_ColumnPropNameInTable="ProgramadoCtosColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Contratos" msprop:Generator_UserColumnName="Contratos" msprop:Generator_ColumnPropNameInRow="Contratos" msprop:Generator_ColumnVarNameInTable="columnContratos" msprop:Generator_ColumnPropNameInTable="ContratosColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ProgramadoLic" msprop:Generator_UserColumnName="ProgramadoLic" msprop:Generator_ColumnPropNameInRow="ProgramadoLic" msprop:Generator_ColumnVarNameInTable="columnProgramadoLic" msprop:Generator_ColumnPropNameInTable="ProgramadoLicColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Licitaciones" msprop:Generator_UserColumnName="Licitaciones" msprop:Generator_ColumnPropNameInRow="Licitaciones" msprop:Generator_ColumnVarNameInTable="columnLicitaciones" msprop:Generator_ColumnPropNameInTable="LicitacionesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Diferencia" msprop:Generator_UserColumnName="Diferencia" msprop:Generator_ColumnPropNameInRow="Diferencia" msprop:Generator_ColumnVarNameInTable="columnDiferencia" msprop:Generator_ColumnPropNameInTable="DiferenciaColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Datos" />
+      <xs:field xpath="mstns:IdTipo" />
+      <xs:field xpath="mstns:CodInstitucion" />
+      <xs:field xpath="mstns:CodProyecto" />
+      <xs:field xpath="mstns:CodObra" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

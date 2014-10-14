@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Snip.BP.BO.Bpm.MatrizEvaluacion">
+    <Position X="1.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAgAABAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Bpm\MatrizEvaluacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bpm.Pregunta">
+    <Position X="8" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAREAAAAAAAAAgAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Bpm\Pregunta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Seccion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.Bpm.Opcion">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAACAAAAAAgAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Bpm\Opcion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pregunta" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.Bpm.Seccion">
+    <Position X="4.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAgAIBAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bpm\Seccion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MatrizEvaluacion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.Bpm.Proyecto">
+    <Position X="1.25" Y="3.5" Width="2" />
+    <AssociationLine Name="Sector" Type="Snip.BP.BO.Bp.Sector" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="6.338" />
+        <Point X="2.5" Y="6.63" />
+        <Point X="2.698" Y="6.63" Type="JumpStart" />
+        <Point X="2.865" Y="6.63" Type="JumpEnd" />
+        <Point X="7.375" Y="6.63" />
+        <Point X="7.375" Y="7" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Etapa" Type="Snip.BP.BO.App.Estado" ManuallyRouted="true">
+      <Path>
+        <Point X="2.781" Y="6.338" />
+        <Point X="2.781" Y="9.615" />
+        <Point X="10.875" Y="9.615" />
+        <Point X="10.875" Y="7.4" />
+        <Point X="11" Y="7.4" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAKQABACAAAQAEgAABAAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>Bpm\Proyecto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sector" />
+      <Property Name="UnidadEjecutora" />
+      <Property Name="Estado" />
+      <Property Name="Etapa" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.Bpm.ProyectoEvaluacion">
+    <Position X="4.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAQAAAAAAAAAAAIIAgAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Bpm\ProyectoEvaluacion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MatrizEvaluacion" />
+      <Property Name="Proyecto" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.Bpm.Respuesta">
+    <Position X="8" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAACAAEAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Bpm\Respuesta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProyectoEvaluacion" />
+      <Property Name="Opcion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.Sector">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABQAAAAAAAAAAgAABAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Bp\Sector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.Bp.UnidadEjecutora">
+    <Position X="4.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgBQAAAAAAAAAAgAAAAAgAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Bp\UnidadEjecutora.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snip.BP.BO.App.Estado">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQAAAAAAEAABgAAAgAAAAAAgAAAAAAgAAAA=</HashCode>
+      <FileName>App\Estado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

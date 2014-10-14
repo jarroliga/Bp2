@@ -1,0 +1,12 @@
+C:\Snip\Snip.Web.UI.SnipTextBox\bin\Release\Snip.Web.UI.TextBox.dll.config
+C:\Snip\Snip.Web.UI.SnipTextBox\bin\Release\Snip.Web.UI.TextBox.dll
+C:\Snip\Snip.Web.UI.SnipTextBox\bin\Release\Snip.Web.UI.TextBox.pdb
+C:\Snip\Snip.Web.UI.SnipTextBox\obj\Release\ResolveAssemblyReference.cache
+C:\Snip\Snip.Web.UI.SnipTextBox\obj\Release\Snip.Web.UI.TextBox.dll
+C:\Snip\Snip.Web.UI.SnipTextBox\obj\Release\Snip.Web.UI.TextBox.pdb
+C:\SNIP\References\Snip.Web.UI.TextBox.dll.config
+C:\SNIP\References\Snip.Web.UI.TextBox.dll
+C:\SNIP\References\Snip.Web.UI.TextBox.pdb
+C:\SNIP\Web\Bin\Snip.Web.UI.TextBox.dll.config
+C:\SNIP\Web\Bin\Snip.Web.UI.TextBox.dll
+C:\SNIP\Web\Bin\Snip.Web.UI.TextBox.pdb

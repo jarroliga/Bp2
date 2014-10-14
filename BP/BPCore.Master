@@ -1,0 +1,415 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BPCore.master.cs" Inherits="BP.BPCore" %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Portal del SNIP</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="Css/bp.css" rel="stylesheet" type="text/css" />
+    <link href="Css/jquery-ui-1.8.13.custom_min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="encabezado">
+        <div id="logoLeft">
+            <asp:Image ID="imgLogo1" runat="server" ImageUrl="~/Images/h01.png" AlternateText="Logo SNIP" />
+       </div>
+        <div id="titulo">
+                <asp:Image ID="imgTitulo" runat="server" ImageUrl="~/Images/h02.png" ToolTip="DGIP" />
+            </div>
+        <div id="logoRight">
+             <asp:Image ID="imgLogo2" runat="server" ImageUrl="~/Images/h03.png" AlternateText="Simbolos" />
+        </div>
+    </div>
+    <div id="menubar">
+	    <ul class="mnubar-unordered-list">
+		    <li class="mnubar-unordered-list-item">
+		        <asp:HyperLink runat="server" ID="hlkHome" NavigateUrl="~/Default.aspx" CssClass="mnubar-link">
+		            <asp:Image runat="server" ID="imgHome" ImageUrl="~/Images/icon_house.gif" AlternateText="sitemap" CssClass="mnubar-img"/><b>Inicio</b>
+		        </asp:HyperLink>
+		    </li>
+		    <li class="mnubar-unordered-list-item">
+		        <asp:HyperLink runat="server" ID="hlkSiteMap" NavigateUrl="~/Info/MapaSitio.aspx" CssClass="mnubar-link">
+		            <asp:Image runat="server" ID="imgSiteMap" ImageUrl="~/Images/sitemap_color.gif" AlternateText="sitemap" CssClass="mnubar-img"/><b>Mapa del Sitio</b>
+		        </asp:HyperLink>
+		    </li> 
+		    <li class="mnubar-unordered-list-item">
+		        <asp:HyperLink runat="server" ID="hlkPerfil" NavigateUrl="~/Default.aspx" CssClass="mnubar-link" >
+		        <asp:Image runat="server" ID="Image10" ImageUrl="~/Images/ico_vcard.gif" AlternateText="sitemap" CssClass="mnubar-img"/><b><asp:Literal ID="litUsuario" runat="server" Text="Invitado"></asp:Literal></b></asp:HyperLink>
+            </li>
+            <li class="mnubar-unordered-list-item">
+		        <asp:HyperLink runat="server" ID="hlkChangePass" NavigateUrl="~/App/UsuarioChangePass.aspx" CssClass="mnubar-link" Visible="false">
+		        <asp:Image runat="server" ID="Image37" ImageUrl="~/Images/user_key.gif" AlternateText="chgpass" CssClass="mnubar-img"/><b>Cambiar Clave</b></asp:HyperLink>
+            </li>
+		    <li class="mnubar-unordered-list-item">
+		        <asp:HyperLink runat="server" ID="hlkLogin" NavigateUrl="~/LoginPage.aspx" Visible="true" CssClass="mnubar-link"><asp:Image runat="server" ID="imgLogin" ImageUrl="~/Images/icon_padlock.gif" AlternateText="sitemap" CssClass="mnubar-img"/><b>Inicio Sesión</b></asp:HyperLink>
+		    </li>
+		    <li class="mnubar-unordered-list-item">
+		        <asp:HyperLink runat="server" ID="hlkLogout" NavigateUrl="~/LoginPage.aspx?do=logout" Visible="false" CssClass="mnubar-link"><asp:Image runat="server" ID="imgLogout" ImageUrl="~/Images/icon_padlock.gif" AlternateText="sitemap" CssClass="mnubar-img"/><b>Finalizar Sesión</b></asp:HyperLink>
+		    </li>
+	    </ul>
+    </div>
+    <div id="pagina">
+        <div id="lateral">
+            <div id="menutop">
+                <h3 id="menutitle">Opciones del Sistema</h3>
+            </div>
+	        <div id="menubody">
+                <%--Menú de Inicio del Sistema--%>
+	            <div id="mnu0001" runat="server">
+	                <h3 class="mnu-title">Inicio</h3>
+	                <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkInicio" NavigateUrl="~/Default.aspx">
+                                <asp:Image runat="server" ID="imgInicio" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Inicio</asp:HyperLink></li>
+ 	                    </ul>
+		            </div>
+		        </div>
+                <%--Menú de Preinversión--%>
+                <div id="mnu1001" runat="server">
+                    <h3 class="mnu-title">Preinversi&oacute;n</h3>
+	                <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkSolicitudes" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image33" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Todas las Solicitudes</asp:HyperLink></li>
+                        </ul>
+		            </div>
+                    <h3 class="mnu-title"></h3>
+	                <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkSolEnRegistro" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image43" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>En Registro</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkSolAval" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image44" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>En Solicitud de Aval</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkSolVerificacion" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image45" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>En Verificaci&oacute;n</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                    <h3 class="mnu-title"></h3>
+	                <div>
+                        <ul class="mnu-list">
+                           <li><asp:HyperLink runat="server" ID="hlkSolEsperaInformacion" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image50" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>En Espera de Informaci&oacute;n</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                     <h3 class="mnu-title"></h3>
+	                <div>
+                        <ul class="mnu-list">
+                           <li><asp:HyperLink runat="server" ID="hlkSolEnFirma" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image46" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>En Firma</asp:HyperLink></li>
+                           <li><asp:HyperLink runat="server" ID="hlkSolDictaminadas" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image47" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Dictaminadas</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="mnu1010" runat="server">
+                    <h3 class="mnu-title">Iniciativas</h3>
+	                <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkProgramas" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image48" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Programas</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkProyectos" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image49" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Proyectos</asp:HyperLink></li>
+                        </ul>
+		            </div>
+                </div>
+                <div id="mnu1020" runat="server">
+                    <h3 class="mnu-title">Programa</h3>
+	                <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink12" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image51" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Datos Generales</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink13" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image52" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Componentes</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink14" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image53" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Documentos</asp:HyperLink></li>
+                        </ul>
+		            </div>
+                </div>
+                <div id="mnu1030" runat="server">
+                    <h3 class="mnu-title">Componente</h3>
+	                <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink15" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image54" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Datos Generales</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink16" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image55" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Proyectos/Actividades</asp:HyperLink></li>
+                        </ul>
+		            </div>
+                </div>
+                 <div id="mnu1040" runat="server">
+                    <h3 class="mnu-title">Proyecto/Actividad</h3>
+	                <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink17" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image56" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Datos Espec&iacute;ficos</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink18" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image57" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Estructura de Costos</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink19" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image58" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Estructura de Gastos</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink20" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image59" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Beneficiarios</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink21" NavigateUrl="~/bpi/SolicitudList.aspx">
+                                <asp:Image runat="server" ID="Image60" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Documentos</asp:HyperLink></li>
+                        </ul>
+		            </div>
+                </div>
+                <%-- Banco de Proyectos--%>
+		        <div id="mnu2001" runat="server">
+		            <h3 class="mnu-title">Banco de Proyectos</h3>
+		            <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkProyectoView" NavigateUrl="~/bp/ProyectoView.aspx">
+                                <asp:Image runat="server" ID="Image28" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Inversi&oacute;n P&uacute;blica (PIP)</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkObraList" NavigateUrl="~/bp/ProyectoList.aspx">
+                                <asp:Image runat="server" ID="Image34" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Programas</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink22" NavigateUrl="~/bp/ProyectoList.aspx">
+                                <asp:Image runat="server" ID="Image61" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Proyectos</asp:HyperLink></li>
+                            <%--<li><asp:HyperLink runat="server" ID="hlkProyObsList" NavigateUrl="~/bp/ProyectoObservacionList.aspx">
+                            <asp:Image runat="server" ID="Image35" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Observaciones</asp:HyperLink></li>--%>
+                        </ul>                           
+                    </div>
+                </div>
+                <div id="mnu2010" runat="server">
+                    <h3 class="mnu-title">Programa</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkObraView" NavigateUrl="~/bp/ProyectoView.aspx">
+                                <asp:Image runat="server" ID="Image8" ImageUrl="~/Images/application_form.png" AlternateText="sitemap" CssClass="mnu-list-ico"/>Datos Generales</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkContratoList" NavigateUrl="~/bp/ProyectoView.aspx" Visible="false">
+                                <asp:Image runat="server" ID="Image18" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Componentes</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink23" NavigateUrl="~/bp/ProyectoView.aspx" Visible="false">
+                                <asp:Image runat="server" ID="Image7" ImageUrl="~/Images/attach.png" AlternateText="sitemap" CssClass="mnu-list-ico"/>Documentos</asp:HyperLink></li>
+                        </ul>   
+                    </div>
+                </div>
+                <div id="mnu4001" runat="server">
+                    <h3 class="mnu-title">Seguimiento: Licitaciones</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionList" NavigateUrl="~/bps/LicitacionList.aspx">
+                                <asp:Image runat="server" ID="Image1" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Licitaciones</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                    <h3 class="mnu-title"></h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=1">
+                                <asp:Image runat="server" ID="Image29" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />En Registro</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=2">
+                                <asp:Image runat="server" ID="Image30" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />En Revisi&oacute;n DGIP</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink3" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=3">
+                                <asp:Image runat="server" ID="Image31" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />No Iniciadas</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink4" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=4">
+                                <asp:Image runat="server" ID="Image32" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />En Proceso</asp:HyperLink></li>                                
+                        </ul>
+                    </div>                  
+                    <h3 class="mnu-title"></h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkAlertaEstado" NavigateUrl="~/bps/AlertaEstadoList.aspx">
+                                <asp:Image runat="server" ID="imgAlertaEst" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Alertas de Registro</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkAlertaEtapa" NavigateUrl="~/bps/AlertaEtapaList.aspx">
+                                <asp:Image runat="server" ID="imgAlertaEta" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Alertas de Etapas</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkAlertaReprogramacion" NavigateUrl="~/bps/AlertaReprogramacionList.aspx">
+                                <asp:Image runat="server" ID="Image38" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Alertas de Reprogram.</asp:HyperLink></li>                                
+                        </ul>
+                    </div>
+                </div>
+                <div id="mnu4010" runat="server">
+                    <h3 class="mnu-title">Licitaci&oacute;n</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionEdit" NavigateUrl="~/bps/LicitacionEdit.aspx">
+                                <asp:Image runat="server" ID="Image2" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Datos B&aacute;sicos</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkCronogramaList" NavigateUrl="~/bps/LicitacionEtapaCronogramaList.aspx">
+                                <asp:Image runat="server" ID="Image4" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Cronograma</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionObraList" NavigateUrl="~/bps/LicitacionObraList.aspx">
+                                <asp:Image runat="server" ID="Image15" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Obras/Actividades</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionReprogramacion" NavigateUrl="~/bps/LicitacionReprogramacionList.aspx">
+                                <asp:Image runat="server" ID="Image6" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Reprogramaci&oacute;n</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionAjusteFinanciero" NavigateUrl="~/bps/LicitacionAjusteFinancieroList.aspx">
+                                <asp:Image runat="server" ID="Image35" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Ajuste Financiero</asp:HyperLink></li>
+                                                            
+                        </ul>
+                    </div>
+                    <h3 class="mnu-title"></h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionEtapa" NavigateUrl="~/bps/LicitacionEtapaCronogramaCheck.aspx">
+                                <asp:Image runat="server" ID="Image14" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Registro de Etapa</asp:HyperLink></li>                                
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionCancel" NavigateUrl="~/bps/LicitacionCancel.aspx">
+                                <asp:Image runat="server" ID="Image39" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Cancelar Proceso</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionDeserted" NavigateUrl="~/bps/LicitacionDeserted.aspx">
+                                <asp:Image runat="server" ID="Image40" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Declarar Desierta</asp:HyperLink></li>                                
+                            <li><asp:HyperLink runat="server" ID="hlkLicitacionBitacoraList" NavigateUrl="~/bps/LicitacionBitacoraList.aspx">                            
+                                <asp:Image runat="server" ID="Image3" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Bit&aacute;cora de Estados</asp:HyperLink></li>                                 
+                        </ul>
+                    </div>
+                </div>
+                <div id="mnu4020" runat="server">
+                    <h3 class="mnu-title">Seguimiento: Contratos</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink24" NavigateUrl="~/bps/LicitacionList.aspx">
+                                <asp:Image runat="server" ID="Image17" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico"/>Contratos</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                    <h3 class="mnu-title"></h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink25" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=1">
+                                <asp:Image runat="server" ID="Image62" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />En Registro</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink26" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=2">
+                                <asp:Image runat="server" ID="Image63" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />En Revisi&oacute;n DGIP</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink28" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=4">
+                                <asp:Image runat="server" ID="Image65" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />En Ejecuci&oacute;n</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink27" NavigateUrl="~/bps/LicitacionList.aspx?IdEst=4">
+                                <asp:Image runat="server" ID="Image64" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Finalizados</asp:HyperLink></li>
+                        </ul>
+                    </div>                  
+                    <h3 class="mnu-title"></h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink29" NavigateUrl="~/bps/AlertaEstadoList.aspx">
+                                <asp:Image runat="server" ID="Image66" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Alertas de Registro</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink30" NavigateUrl="~/bps/AlertaEtapaList.aspx">
+                                <asp:Image runat="server" ID="Image67" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Alertas de Estado</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink31" NavigateUrl="~/bps/AlertaReprogramacionList.aspx">
+                                <asp:Image runat="server" ID="Image68" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Alertas de Reprogram.</asp:HyperLink></li>                                
+                        </ul>
+                    </div>
+                </div>
+                <div id="mnu4030" runat="server">
+                    <h3 class="mnu-title">Contrato</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkContratoEdit" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image5" ImageUrl="~/Images/application_form.png" AlternateText="sitemap" CssClass="mnu-list-ico" />Datos B&aacute;sicos</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkContratoUbica" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image19" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Ubicaciones</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink32" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image69" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Obras/Actividades</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkContratoProg" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image20" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Programacion</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkContratoReprog" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image21" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Re-Programacion</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkEjecucion" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image22" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Ejecucion</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkContratoObs" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image23" ImageUrl="~/Images/ico_comment.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Observaciones</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkContratoInf" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image24" ImageUrl="~/Images/ico_comment.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Informe de Avance</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="hlkContratoEstado" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image16" ImageUrl="~/Images/ico_table.gif.png" AlternateText="sitemap" CssClass="mnu-list-ico" />Bit&aacute;cora de Estados</asp:HyperLink></li>			                            		                            
+                        </ul>
+                    </div>
+                </div>
+                <%--Menú de Gestión Municipal --%>
+                <div id="mnu5001" runat="server">
+                    <h3 class="mnu-title">Gesti&oacute;n Municipal</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink10" NavigateUrl="~/Bpm/ProyectoList.aspx">
+                                <asp:Image runat="server" ID="Image41" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Proyectos</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink35" NavigateUrl="~/Bpm/ProyectoList.aspx">
+                                <asp:Image runat="server" ID="Image70" ImageUrl="~/Images/ico_table.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Evaluaciones</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="mnu5010" runat="server">
+                    <h3 class="mnu-title">Evaluaci&oacute;n</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink11" NavigateUrl="~/Bpm/ProyectoList.aspx">
+                                <asp:Image runat="server" ID="Image42" ImageUrl="~/Images/ico_table_gear.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Datos de la Evaluaci&oacute;n</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="mnu5020" runat="server">
+                    <h3 class="mnu-title">Configuraci&oacute;n</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink33" NavigateUrl="~/Bpm/ProyectoList.aspx">
+                                <asp:Image runat="server" ID="Image25" ImageUrl="~/Images/ico_table_gear.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Matriz Evaluaci&oacute;n</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+                <%-- Reportes --%>
+                <div id="mnu6001" runat="server">
+                    <h3 class="mnu-title">Reportes</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink9" NavigateUrl="~/Rpt/ReporteList.aspx">
+                                <asp:Image runat="server" ID="Image36" ImageUrl="~/images/ico_chart_bar.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Reportes Licitaci&oacute;n</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+                <%-- Seguridad del Sistema --%>
+                 <div id="mnu9001" runat="server">
+                    <h3 class="mnu-title">Seguridad</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="hlkUsuarioList" NavigateUrl="~/App/UsuarioList.aspx">
+                                <asp:Image runat="server" ID="Image26" ImageUrl="~/Images/ico_table_gear.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Usuarios</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+                <%--Administración del Sistema --%>
+                <div id="mnu8001" runat="server">
+                    <h3 class="mnu-title">Administraci&oacute;n</h3>
+                    <div>
+                        <ul class="mnu-list">
+                            <li><asp:HyperLink runat="server" ID="HyperLink5" NavigateUrl="~/App/AplicacionList.aspx">
+                                <asp:Image runat="server" ID="Image9" ImageUrl="~/Images/ico_table_gear.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Aplicaciones</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink6" NavigateUrl="~/App/OpcionList.aspx">
+                                <asp:Image runat="server" ID="Image11" ImageUrl="~/Images/ico_table_gear.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Opciones</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink7" NavigateUrl="#">
+                                <asp:Image runat="server" ID="Image12" ImageUrl="~/Images/ico_table_gear.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Perfiles</asp:HyperLink></li>
+                            <li><asp:HyperLink runat="server" ID="HyperLink8" NavigateUrl="~/App/UsuarioList.aspx">
+                                <asp:Image runat="server" ID="Image13" ImageUrl="~/Images/ico_table_gear.gif" AlternateText="sitemap" CssClass="mnu-list-ico" />Usuarios</asp:HyperLink></li>
+                        </ul>
+                    </div>
+                </div>
+                
+	        </div>
+	        <div id="menubottom"></div>
+        </div>
+        <div id="contenido">
+            <div id="formtop">
+                <h3 id="formtitle">Banco de Proyectos</h3>
+            </div>
+            <div id="formbody" class="formulario">
+                <form id="formMaster" runat="server">
+                    <ajaxToolkit:ToolkitScriptManager ID="tsm" runat="server" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" LoadScriptsBeforeUI="false">
+                        <CompositeScript>
+                            <Scripts>
+                                <asp:ScriptReference Name="MicrosoftAjax.js"  />
+                                <asp:ScriptReference Path="~/js/bp.js" ScriptMode="Release"/>
+                                <asp:ScriptReference Path="~/js/jquery-1.6.1.min.js" ScriptMode="Release"/>
+                                <asp:ScriptReference Path="~/js/jquery-ui-1.8.13.custom.min.js" ScriptMode="Release"/>
+                                <asp:ScriptReference Path="~/js/jquery.ui.datepicker-es.js"/>
+                                <asp:ScriptReference Path="~/js/plugins/jquery.truncator.min.js" />
+                                <asp:ScriptReference Path="~/js/jquery.config.js" />
+                            </Scripts>
+                        </CompositeScript>
+                    </ajaxToolkit:ToolkitScriptManager>
+                    <asp:Panel ID="pnlMsj" runat="server" CssClass="msj-pnl" Visible="false">
+                        <asp:Image ID="imgMsj" runat="server" ImageUrl="~/images/Info.gif" ImageAlign="Middle"/>
+                        <div class="msj-text">    
+                            <asp:Literal ID="litMsj" runat="server" Mode="Transform"></asp:Literal>
+                        </div>
+                    </asp:Panel>
+                    <asp:ContentPlaceHolder ID="cphMaster" runat="server">
+                    </asp:ContentPlaceHolder>
+                </form>
+            </div>
+            <div id="formbottom"></div>
+        </div>
+    </div> 
+    <div style="clear: both;"></div>
+    <div id="footer">
+       <p id="P2">.: Direcci&oacute;n General de Inversiones P&uacute;blicas &copy; 2009. Derechos Reservados | Dise&ntilde;ado por Inform&aacute;tica - DGIP :. </p>
+    </div>
+</body>
+</html>

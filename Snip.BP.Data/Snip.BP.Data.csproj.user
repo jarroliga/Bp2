@@ -1,0 +1,25 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>
+    </PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{c252feb5-a946-4202-b1d4-9916a0590387}" xmlns="">
+        <DatabaseConnection Name="Data Source=ULISES;Initial Catalog=SNIP;User ID=sa" Provider="{91510608-8809-4020-8897-FBA057E22D54}" ConnectionString="01000000D08C9DDF0115D1118C7A00C04FC297EB010000001306376B2715954899ACC65151B48D190000000002000000000003660000A8000000100000002BCD33E60C7AD1BE5FD6C2460ACAEBB00000000004800000A0000000100000000E523AB0252AF7AC521B0C42D528C7A568000000F02A341896FA9C6C140EFE0EB7EFC1753F149D91C87615BA4EDCABF12001DC709B3692DC0921E864679269C9B89D87E453B621B2F1E171045204F3B8D15BB58DB5222A8DAE2AF8CF229996D8A13884F97A606CDD721E37CC57758C1ABC47E1A6922F9323FA9D9F02140000009923814E6107350BC6ABDE9ECF3068D92D867260" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

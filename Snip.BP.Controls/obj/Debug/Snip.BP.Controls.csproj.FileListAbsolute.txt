@@ -1,0 +1,8 @@
+D:\BP\Snip.BP.Controls\bin\Debug\Snip.BP.UI.WebControls.dll
+D:\BP\Snip.BP.Controls\bin\Debug\Snip.BP.UI.WebControls.pdb
+D:\BP\Snip.BP.Controls\obj\Debug\Snip.BP.UI.WebControls.dll
+D:\BP\Snip.BP.Controls\obj\Debug\Snip.BP.UI.WebControls.pdb
+D:\BP2\Snip.BP.Controls\bin\Debug\Snip.BP.UI.WebControls.dll
+D:\BP2\Snip.BP.Controls\bin\Debug\Snip.BP.UI.WebControls.pdb
+D:\BP2\Snip.BP.Controls\obj\Debug\Snip.BP.UI.WebControls.dll
+D:\BP2\Snip.BP.Controls\obj\Debug\Snip.BP.UI.WebControls.pdb

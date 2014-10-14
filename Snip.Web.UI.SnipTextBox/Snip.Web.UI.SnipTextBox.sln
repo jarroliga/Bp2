@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snip.Web.UI.SnipTextBox", "Snip.Web.UI.SnipTextBox.csproj", "{1F030E4D-0101-43CA-A021-234616588BB2}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebDemo", "..\WebDemo\", "{E1ADECD8-1592-439B-81E8-8E8022965287}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = "{1F030E4D-0101-43CA-A021-234616588BB2}|Snip.Web.UI.TextBox.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WebDemo"
+		Debug.AspNetCompiler.PhysicalPath = "..\WebDemo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebDemo\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebDemo"
+		Release.AspNetCompiler.PhysicalPath = "..\WebDemo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebDemo\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1078"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F030E4D-0101-43CA-A021-234616588BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F030E4D-0101-43CA-A021-234616588BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F030E4D-0101-43CA-A021-234616588BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F030E4D-0101-43CA-A021-234616588BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1ADECD8-1592-439B-81E8-8E8022965287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1ADECD8-1592-439B-81E8-8E8022965287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1ADECD8-1592-439B-81E8-8E8022965287}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1ADECD8-1592-439B-81E8-8E8022965287}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

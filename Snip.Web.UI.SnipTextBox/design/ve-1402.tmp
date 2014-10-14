@@ -1,0 +1,201 @@
+/*
+==============================================================================
+	Click2Install Software Custom ASP.NET Control Library
+	
+  Class:         ErrorProviderType.cs
+  Functionality: Custom DesignerActionList for a a ZatakTextBox.
+  
+  Copyright © 2001-2006 Click2Install Software
+	Copyright © Maurice Moore (info@click2install.com)
+		
+	This program is free software; you can redistribute it and/or
+	modify it under the terms of the GNU General Public License
+	as published by the Free Software Foundation; either version 2
+	of the License, or (at your option) any later version.
+	
+	See the GNU General Public License for more details.
+	
+==============================================================================
+*/
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.ComponentModel.Design;
+using Cygnet.Controls;
+using System.ComponentModel;
+using System.Web.UI.WebControls;
+
+namespace Cygnet.Controls.design
+{
+    public class ZatakTextBoxActionList : DesignerActionList
+    {
+        private ZatakTextBox m_LinkedControl = null;
+
+        public ZatakTextBoxActionList(ZatakTextBox textbox)
+            : base(textbox)
+        {
+            m_LinkedControl = textbox;
+        }
+
+        private PropertyDescriptor GetPropertyByName(string name)
+        {
+            PropertyDescriptor pd = TypeDescriptor.GetProperties(m_LinkedControl)[name];
+            if (null == pd)
+            {
+                throw new ArgumentException("Property '" + name + "' not found on " + m_LinkedControl.GetType().Name);
+            }
+            return pd;
+        }
+
+
+        //public string ValidatorText
+        //{
+        //  get { return m_LinkedControl.ValidatorText; }
+        //  set { GetPropertyByName("ValidatorText").SetValue(m_LinkedControl, value); }
+        //}
+        public bool Required
+        {
+            get { return m_LinkedControl.Required; }
+            set { GetPropertyByName("Required").SetValue(m_LinkedControl, value); }
+        }
+        public TextBoxType CurrentTextBoxType
+        {
+            get { return m_LinkedControl.CurrentTextBoxType; }
+            set { GetPropertyByName("CurrentTextBoxType").SetValue(m_LinkedControl, value); }
+        }
+        public string CustomRegularExpression
+        {
+            get { return m_LinkedControl.CustomRegularExpression; }
+            set { GetPropertyByName("CustomRegularExpression").SetValue(m_LinkedControl, value); }
+        }
+        public string RequiredValidatorMessage
+        {
+            get { return m_LinkedControl.RequiredValidatorMessage; }
+            set { GetPropertyByName("RequiredValidatorMessage").SetValue(m_LinkedControl, value); }
+        }
+        public string TextTypeValidatorMessage
+        {
+            get { return m_LinkedControl.TextTypeValidatorMessage; }
+            set { GetPropertyByName("TextTypeValidatorMessage").SetValue(m_LinkedControl, value); }
+        }
+        public string SpecialChars
+        {
+            get { return m_LinkedControl.SpecialChars; }
+            set { GetPropertyByName("SpecialChars").SetValue(m_LinkedControl, value); }
+        }
+        public int DigitsAfterDecimalPoint
+        {
+            get { return m_LinkedControl.DigitsAfterDecimalPoint; }
+            set { GetPropertyByName("DigitsAfterDecimalPoint").SetValue(m_LinkedControl, value); }
+        }
+        public bool ValidatorFocusOnError
+        {
+            get { return m_LinkedControl.ValidatorFocusOnError; }
+            set { GetPropertyByName("ValidatorFocusOnError").SetValue(m_LinkedControl, value); }
+        }
+
+        public bool ValidatorEnableClientScript
+        {
+            get { return m_LinkedControl.ValidatorEnableClientScript; }
+            set { GetPropertyByName("ValidatorEnableClientScript").SetValue(m_LinkedControl, value); }
+        }
+
+        public bool RenderDesignModeValidatorIcon
+        {
+            get { return m_LinkedControl.RenderDesignModeValidatorIcon; }
+            set { GetPropertyByName("RenderDesignModeValidatorIcon").SetValue(m_LinkedControl, value); }
+        }
+
+        public ValidatorDisplay ValidatorDisplayType
+        {
+            get { return m_LinkedControl.ValidatorDisplayType; }
+            set { GetPropertyByName("ValidatorDisplayType").SetValue(m_LinkedControl, value); }
+        }
+
+        public ErrorProviderType ErrorProvider
+        {
+            get { return m_LinkedControl.ErrorProvider; }
+            set { GetPropertyByName("ErrorProvider").SetValue(m_LinkedControl, value); }
+        }
+
+        private void LaunchSite()
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("http://www.click2install.com/programming/#ZatakTextBox");
+            }
+            catch { }
+        }
+
+        public override DesignerActionItemCollection GetSortedActionItems()
+        {
+            DesignerActionItemCollection coll = new DesignerActionItemCollection();
+
+            #region Validation Details
+
+
+            string strHeaderValidationDetails = "Validation Details";
+            coll.Add(new DesignerActionHeaderItem(strHeaderValidationDetails));
+            //coll.Add(new DesignerActionPropertyItem("ValidatorText", "Validator Text:", "Validator", "The required validators Text"));
+            coll.Add(new DesignerActionPropertyItem("ValidatorFocusOnError", "Focus on Error", strHeaderValidationDetails, "The required validators SetFocusOnError"));
+            coll.Add(new DesignerActionPropertyItem("ValidatorEnableClientScript", "Enable Client Script", strHeaderValidationDetails, "The required validators EnableClientScript"));
+            coll.Add(new DesignerActionPropertyItem("ValidatorDisplayType", "Validator Display Type", strHeaderValidationDetails, "The required validators Display"));
+            coll.Add(new DesignerActionPropertyItem("ErrorProvider", "Error Display Type", strHeaderValidationDetails, "The error providers display type"));
+            #endregion
+
+            #region Required Validations
+
+
+            string strHeaderValidation = "Required Validations";
+            coll.Add(new DesignerActionHeaderItem(strHeaderValidation));
+
+            coll.Add(new DesignerActionPropertyItem("Required", "Required", strHeaderValidation, "Check if this is required field."));
+            if (Required)
+            {
+                coll.Add(new DesignerActionPropertyItem("RequiredValidatorMessage", "Required Validator Message:", strHeaderValidation, "The Required Validators Message"));
+            }
+
+            #endregion
+
+            #region Numeric Validations
+
+
+            string strHeaderNumericValidation = "TextBox Type Validation";
+            coll.Add(new DesignerActionHeaderItem(strHeaderNumericValidation));
+
+            coll.Add(new DesignerActionPropertyItem("CurrentTextBoxType", "TextBoxType", strHeaderNumericValidation, "Choose one of the textbox type if required."));
+
+            if (CurrentTextBoxType == TextBoxType.CUSTOM)
+            {
+                coll.Add(new DesignerActionPropertyItem("CustomRegularExpression", "Custom Reg. Expression", strHeaderNumericValidation, "Choose your own custom regular expression."));
+            }
+            if (CurrentTextBoxType == TextBoxType.ALPHANUMERICWITHSPECIALCHAR)
+            {
+                coll.Add(new DesignerActionPropertyItem("SpecialChars", "Custom Chars", strHeaderNumericValidation, "Choose custom charactors that would be included with alphanumeric."));
+
+            }
+            if (CurrentTextBoxType == TextBoxType.NUMERICDECIMAL || CurrentTextBoxType == TextBoxType.NUMERICDECIMALONLYPOSITIVE)
+            {
+
+                coll.Add(new DesignerActionPropertyItem("DigitsAfterDecimalPoint", "Digits After Decimal Point", strHeaderNumericValidation, "Choose digits to be verify after decimal points.."));
+            }
+            if (CurrentTextBoxType != TextBoxType.NONE)
+            {
+                coll.Add(new DesignerActionPropertyItem("TextTypeValidatorMessage", "Text Type Validator Message:", strHeaderNumericValidation, "The Validators Message for Type chosen above."));
+            }
+
+            #endregion
+
+            coll.Add(new DesignerActionHeaderItem("Design Mode"));
+            coll.Add(new DesignerActionPropertyItem("RenderDesignModeValidatorIcon", "Render DesignMode Icons", "Design Mode", "Set true to render error provider icons in DesignMode"));
+
+            coll.Add(new DesignerActionHeaderItem("Information"));
+            coll.Add(new DesignerActionMethodItem(this, "LaunchSite", "ZatakTextBox Website ...", "Information", true));
+
+            coll.Add(new DesignerActionTextItem("ID: " + m_LinkedControl.ID, "ID"));
+
+            return coll;
+        }
+
+    }
+}

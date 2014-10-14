@@ -1,0 +1,13 @@
+C:\BP\Snip.BP.Validation\bin\Debug\Snip.BP.Validation.dll
+C:\BP\Snip.BP.Validation\bin\Debug\Snip.BP.Validation.pdb
+C:\BP\Snip.BP.Validation\obj\Debug\ResolveAssemblyReference.cache
+C:\BP\Snip.BP.Validation\obj\Debug\Snip.BP.Validation.dll
+C:\BP\Snip.BP.Validation\obj\Debug\Snip.BP.Validation.pdb
+D:\BP\Snip.BP.Validation\bin\Debug\Snip.BP.Validation.dll
+D:\BP\Snip.BP.Validation\bin\Debug\Snip.BP.Validation.pdb
+D:\BP\Snip.BP.Validation\obj\Debug\Snip.BP.Validation.dll
+D:\BP\Snip.BP.Validation\obj\Debug\Snip.BP.Validation.pdb
+D:\BP2\Snip.BP.Validation\bin\Debug\Snip.BP.Validation.dll
+D:\BP2\Snip.BP.Validation\bin\Debug\Snip.BP.Validation.pdb
+D:\BP2\Snip.BP.Validation\obj\Debug\Snip.BP.Validation.dll
+D:\BP2\Snip.BP.Validation\obj\Debug\Snip.BP.Validation.pdb

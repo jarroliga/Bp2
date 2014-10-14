@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptLicitaciones106" targetNamespace="http://tempuri.org/dsRptLicitaciones106.xsd" xmlns:mstns="http://tempuri.org/dsRptLicitaciones106.xsd" xmlns="http://tempuri.org/dsRptLicitaciones106.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptLicitaciones106" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRptLicitaciones106" msprop:Generator_DataSetName="dsRptLicitaciones106" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Datos" msprop:Generator_UserTableName="Datos" msprop:Generator_RowDeletedName="DatosRowDeleted" msprop:Generator_RowChangedName="DatosRowChanged" msprop:Generator_RowClassName="DatosRow" msprop:Generator_RowChangingName="DatosRowChanging" msprop:Generator_RowEvArgName="DatosRowChangeEvent" msprop:Generator_RowEvHandlerName="DatosRowChangeEventHandler" msprop:Generator_TableClassName="DatosDataTable" msprop:Generator_TableVarName="tableDatos" msprop:Generator_RowDeletingName="DatosRowDeleting" msprop:Generator_TablePropName="Datos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTipo" msprop:Generator_UserColumnName="IdTipo" msprop:Generator_ColumnVarNameInTable="columnIdTipo" msprop:Generator_ColumnPropNameInRow="IdTipo" msprop:Generator_ColumnPropNameInTable="IdTipoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CodInstitucion" msprop:Generator_UserColumnName="CodInstitucion" msprop:Generator_ColumnVarNameInTable="columnCodInstitucion" msprop:Generator_ColumnPropNameInRow="CodInstitucion" msprop:Generator_ColumnPropNameInTable="CodInstitucionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Institucion" msprop:Generator_UserColumnName="Institucion" msprop:Generator_ColumnVarNameInTable="columnInstitucion" msprop:Generator_ColumnPropNameInRow="Institucion" msprop:Generator_ColumnPropNameInTable="InstitucionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Siglas" msprop:Generator_UserColumnName="Siglas" msprop:Generator_ColumnVarNameInTable="columnSiglas" msprop:Generator_ColumnPropNameInRow="Siglas" msprop:Generator_ColumnPropNameInTable="SiglasColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Proys" msprop:Generator_UserColumnName="Proys" msprop:Generator_ColumnVarNameInTable="columnProys" msprop:Generator_ColumnPropNameInRow="Proys" msprop:Generator_ColumnPropNameInTable="ProysColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Obras" msprop:Generator_UserColumnName="Obras" msprop:Generator_ColumnVarNameInTable="columnObras" msprop:Generator_ColumnPropNameInRow="Obras" msprop:Generator_ColumnPropNameInTable="ObrasColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Asignado" msprop:Generator_UserColumnName="Asignado" msprop:Generator_ColumnVarNameInTable="columnAsignado" msprop:Generator_ColumnPropNameInRow="Asignado" msprop:Generator_ColumnPropNameInTable="AsignadoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ObrasConCto" msprop:Generator_UserColumnName="ObrasConCto" msprop:Generator_ColumnVarNameInTable="columnObrasConCto" msprop:Generator_ColumnPropNameInRow="ObrasConCto" msprop:Generator_ColumnPropNameInTable="ObrasConCtoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AsignadoObrasCto" msprop:Generator_UserColumnName="AsignadoObrasCto" msprop:Generator_ColumnVarNameInTable="columnAsignadoObrasCto" msprop:Generator_ColumnPropNameInRow="AsignadoObrasCto" msprop:Generator_ColumnPropNameInTable="AsignadoObrasCtoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProgramadoCtos" msprop:Generator_UserColumnName="ProgramadoCtos" msprop:Generator_ColumnVarNameInTable="columnProgramadoCtos" msprop:Generator_ColumnPropNameInRow="ProgramadoCtos" msprop:Generator_ColumnPropNameInTable="ProgramadoCtosColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Contratos" msprop:Generator_UserColumnName="Contratos" msprop:Generator_ColumnVarNameInTable="columnContratos" msprop:Generator_ColumnPropNameInRow="Contratos" msprop:Generator_ColumnPropNameInTable="ContratosColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ObrasConLic" msprop:Generator_UserColumnName="ObrasConLic" msprop:Generator_ColumnVarNameInTable="columnObrasConLic" msprop:Generator_ColumnPropNameInRow="ObrasConLic" msprop:Generator_ColumnPropNameInTable="ObrasConLicColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AsignadoObrasLic" msprop:Generator_UserColumnName="AsignadoObrasLic" msprop:Generator_ColumnVarNameInTable="columnAsignadoObrasLic" msprop:Generator_ColumnPropNameInRow="AsignadoObrasLic" msprop:Generator_ColumnPropNameInTable="AsignadoObrasLicColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProgramadoLic" msprop:Generator_UserColumnName="ProgramadoLic" msprop:Generator_ColumnVarNameInTable="columnProgramadoLic" msprop:Generator_ColumnPropNameInRow="ProgramadoLic" msprop:Generator_ColumnPropNameInTable="ProgramadoLicColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Licitaciones" msprop:Generator_UserColumnName="Licitaciones" msprop:Generator_ColumnVarNameInTable="columnLicitaciones" msprop:Generator_ColumnPropNameInRow="Licitaciones" msprop:Generator_ColumnPropNameInTable="LicitacionesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ObrasExcluidas" msprop:Generator_UserColumnName="ObrasExcluidas" msprop:Generator_ColumnVarNameInTable="columnObrasExcluidas" msprop:Generator_ColumnPropNameInRow="ObrasExcluidas" msprop:Generator_ColumnPropNameInTable="ObrasExcluidasColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AsignadoObrasExcluidas" msprop:Generator_UserColumnName="AsignadoObrasExcluidas" msprop:Generator_ColumnVarNameInTable="columnAsignadoObrasExcluidas" msprop:Generator_ColumnPropNameInRow="AsignadoObrasExcluidas" msprop:Generator_ColumnPropNameInTable="AsignadoObrasExcluidasColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ObrasSinRegistro" msprop:Generator_UserColumnName="ObrasSinRegistro" msprop:Generator_ColumnVarNameInTable="columnObrasSinRegistro" msprop:Generator_ColumnPropNameInRow="ObrasSinRegistro" msprop:Generator_ColumnPropNameInTable="ObrasSinRegistroColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AsignadoObrasSinRegistro" msprop:Generator_UserColumnName="AsignadoObrasSinRegistro" msprop:Generator_ColumnVarNameInTable="columnAsignadoObrasSinRegistro" msprop:Generator_ColumnPropNameInRow="AsignadoObrasSinRegistro" msprop:Generator_ColumnPropNameInTable="AsignadoObrasSinRegistroColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DatosKey1">
+      <xs:selector xpath=".//mstns:Datos" />
+      <xs:field xpath="mstns:IdTipo" />
+      <xs:field xpath="mstns:Institucion" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
